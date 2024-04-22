@@ -1,0 +1,114 @@
+h1,h2,h3,h4{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(21px, 2.5641vw, 30px);
+  line-height: 100%;
+  color: rgba(var(--cl-a), 1);
+  text-align: center;
+}
+
+h5,h6{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(var(--cl-a), 1);
+  text-align: center;
+}
+
+ol{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  counter-reset: li;
+
+  li{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+    grid-gap: 10px;
+    
+
+    &::before{
+      position: absolute;
+      left: 0;
+      top: -4.5px;
+      content: counters(li, '') '.';
+      counter-increment: li;
+      font-size: clamp(15px, 1.2546vw, 17px);
+      font-family: var(--font-family);
+      font-weight: 700;
+      color: rgba(var(--cl-a),1.0);
+    }
+  }
+}
+
+ul:not([class]) {
+  display: flex;
+  flex-direction: column;
+  padding-left: 26px;
+  grid-gap: 10px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    grid-gap: 5px;
+    color: rgba(var(--cl-a),1.0);
+
+    &::before{
+      content: "";
+      left: -12px;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      width: 6px;
+      height: 6px;
+      background-color: rgba(var(--bg-a),1.0);
+    }
+  }
+}
+
+table:not([class]) {
+  width: 100%;
+  box-shadow: 0 0 0 1px rgba(37, 41, 46, 0.9), 0 2px 0 0 rgba(37, 41, 46, 0.75),
+    0 -2px 0 0 rgba(37, 41, 46, 0.75);
+  border: 1px solid var(--br-d);
+  position: relative;
+  border-spacing: 0;
+
+  @include small-tablet{
+    overflow-x: scroll;
+    display: table-column-group;
+
+    & > *{
+      white-space: nowrap;
+    }
+    
+    td{
+      min-width: 185px;
+      white-space: normal !important;
+    }
+  }
+
+  th {
+    padding: 15px 5px;
+    color: rgba(var(--cl-a), .5);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgba(var(--bg-c),1.0);
+    border: solid 1px var(--br-e);
+  }
+
+  td {
+    text-align: center;
+    padding: 10px;
+    color: rgba(var(--cl-a), 1);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    border: solid 1px var(--br-e);
+  }
+}

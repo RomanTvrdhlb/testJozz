@@ -1,0 +1,104 @@
+.h2o-main-nav{
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+
+    &__link{
+        display: flex;
+        align-items: center;
+        line-height: 100%;
+        color: rgba(var(--cl-a),1.0);
+        text-transform: capitalize;
+        font-family: var(--font-family);
+        transition: all .4s;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1px;
+        min-height: 48px;
+
+        &:hover{
+            background: rgba(var(--bg-c),1.0);
+        }
+
+        &.active{
+            background: rgba(var(--bg-c),1.0);
+            color: rgba(var(--cl-c),1.0);
+        }
+
+        @include for-desktop{
+            font-size: 18px;
+            padding: 14px 30px;
+        }
+
+        @include desktop{
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        grid-gap: clamp(10px, 1.107vw, 15px);
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        display: flex;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        font-family: var(--font-family);
+        color: rgba(var(--cl-a),1.0);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: all .3s;
+        white-space: nowrap;
+
+        &:hover{
+            transform:  scale(1.1);
+        }
+
+        @include for-tablet{
+            grid-gap: 12px;
+        }
+
+        @include tablet{
+            grid-gap: 4px;
+        }
+    }
+
+
+    &--mode{
+        @include for-laptop{
+            padding-right: 84px;
+         
+        }
+
+        .h2o-main-nav{
+            &__list{
+                grid-gap: 1px 32px;
+
+                @include for-tablet{
+                    justify-content: space-between;
+                }
+
+                @include small-tablet{
+                    flex-wrap: nowrap;
+                    overflow: auto;
+                    padding:0 2.5%;
+                }
+            }  
+        }
+
+        @include small-tablet{
+            width: calc(100% + 5%);
+            margin-left: -2.5%;
+        }
+    }
+}

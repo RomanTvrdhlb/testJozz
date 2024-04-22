@@ -1,0 +1,44 @@
+.h2o-footer{
+  display: flex;
+  flex-direction: column;
+  border-top: none;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  padding: 20px 0;
+  text-align: center;
+
+  @include tablet{
+    padding-bottom: 84px;
+  }
+ 
+  &__box{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+
+  &__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 30px;
+  }
+ 
+
+  &__item{
+    display: flex;
+  }
+
+  &__bottom{
+    align-self: center;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 0;
+  
+    p{
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.h2o-first-section {
+  position: relative;
+  padding-bottom: 30px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+  }
+}

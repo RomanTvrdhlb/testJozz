@@ -1,0 +1,413 @@
+.h2o-icon {
+  &-logo {
+    height: 55px;
+    display: block;
+    background-image: url(../img/sprite/logo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include for-small-tablet {
+      width: 116px;
+    }
+
+    @include small-tablet {
+      @include for-mobile {
+        width: 100px;
+      }
+    }
+
+    @include mobile {
+      width: 90px;
+      height: 40px;
+    }
+  }
+
+  &-allgames {
+    display: block;
+    background-image: url(../img/sprite/icon.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-slots {
+    display: block;
+    background-image: url(../img/sprite/icon-slots.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-jackpots {
+    display: block;
+    background-image: url(../img/sprite/icon-jackpot.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-boardgames {
+    display: block;
+    background-image: url(../img/sprite/icon-table.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-live {
+    display: block;
+    background-image: url(../img/index/icon-live.png);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-poker {
+    display: block;
+    background-image: url(../img/sprite/icon-poker.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-lottery {
+    display: block;
+    background-image: url(../img/sprite/icon-lottery.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include desktop {
+      @include for-laptop {
+        background-size: 32px;
+      }
+    }
+
+    @include laptop {
+      @include for-small-tablet {
+        background-size: 28px;
+      }
+    }
+  }
+
+  &-play {
+    width: 52px;
+    height: 52px;
+    display: block;
+    background-image: url(../img/sprite/play.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-retro {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    width: 116px;
+    height: 30px;
+    overflow: hidden;
+    background-position: 0 -2496px;
+  }
+
+  &-spinogames {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2556px;
+    width: 161px;
+    height: 29px;
+    overflow: hidden;
+  }
+
+  &-wazdan {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2792px;
+    width: 161px;
+    height: 18px;
+    overflow: hidden;
+  }
+
+  &-just {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -1792px;
+    width: 96px;
+    height: 43px;
+    overflow: hidden;
+  }
+
+  &-irondog {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -1705px;
+    width: 157px;
+    height: 30px;
+    overflow: hidden;
+  }
+
+  &-booming {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -816px;
+    width: 93px;
+    height: 32px;
+    overflow: hidden;
+  }
+
+  &-1x2 {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0px 0px;
+    width: 98px;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  &-pragmat {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2158px;
+    width: 133px;
+    height: 59px;
+    overflow: hidden;
+  }
+
+  &-playson {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2127px;
+    width: 142px;
+    height: 32px;
+    overflow: hidden;
+  }
+
+  &-blueprint {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -780px;
+    width: 144px;
+    height: 34px;
+    overflow: hidden;
+  }
+
+  &-endorph {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -1149px;
+    width: 105px;
+    height: 48px;
+  }
+
+  &-habanero {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -1354px;
+    width: 136px;
+    height: 28px;
+  }
+
+  &-amatic {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    width: 104px;
+    height: 32px;
+    background-position: 0 -602px;
+    overflow: hidden;
+  }
+
+  &-relax {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2462px;
+    width: 103px;
+    height: 32px;
+  }
+
+  &-betsoft {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -712px;
+    width: 84px;
+    height: 32px;
+    overflow: hidden;
+  }
+
+  &-push {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2219px;
+    width: 124px;
+    height: 32px;
+  }
+
+  &-quick {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2335px;
+    width: 121px;
+    height: 29px;
+  }
+
+  &-ygg {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -2904px;
+    width: 132px;
+    height: 33px;
+    overflow: hidden;
+  }
+
+  &-micro {
+    display: block;
+    background-image: url(../img/index/images-list2.png);
+    background-position: 0 -1879px;
+    width: 138px;
+    height: 34px;
+  }
+
+  &-visa {
+    background-image: url(../img/index/images-list.png);
+    display: block;
+    background-position:0 -2726px;
+    overflow: hidden;
+    height: 47px;
+    width: 49px;
+  }
+  &-maestro {
+    background-image: url(../img/index/images-list.png);
+    display: block;
+    background-position: 0 -1837px;
+    overflow: hidden;
+    height: 40px;
+    width: 67px;
+  }
+  &-webmoney {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0 -2794px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+  }
+  &-skrill {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0 -2511px;
+    height: 26px;
+    width: 76px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  &-neteller {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0 -1915px;
+    height: 19px;
+    width: 107px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  &-astropay {
+    display: block;
+    background-image: url(../img/index/images-list.png);
+    background-position: 0 -685px;
+    height: 25px;
+    width: 95px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  &-payop {
+    display: block;
+    background-image: url(../img/index/payop.png);
+    background-size: 100%;
+    width: 110px;
+    height: 48px;
+  }
+}
